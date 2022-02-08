@@ -1,0 +1,91 @@
+body {
+  background-color: #fff;
+}
+
+body p {
+  color: #0c0c0c;
+}
+
+body h1 {
+  color: #0c0c0c;
+}
+
+body.dark {
+  background-color: #0c0c0c;
+}
+
+body.dark p {
+  color: #fff;
+}
+
+body.dark h1 {
+  color: #fff;
+}
+
+
+.container {
+  max-width: 1140px;
+  padding: 15px;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.col {
+  flex: 0 0 50%;
+}
+
+.button-container {
+  background: red;
+  width: 50px;
+  height: 20px;
+  float: right;
+  position: relative;
+}
+
+.theme-button {
+  border: 1px solid #000;
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  background-color: #fff;
+  transition: left 0.5s ease-in-out;
+  left: 0;
+  top: 0;
+}
+
+.theme-button.on {
+  left: 30px;
+}
+
+@media screen and (max-width: 1140px) {
+  .container {
+    max-width: 1040px;
+  }
+}
+
+@media screen and (max-width: 1040px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 590px;
+  }
+}
+
+@media screen and (max-width: 590px) {
+  .container {
+    max-width: 490px;
+  }
+
+  .col {
+    flex: 0 0 100%;
+  }
+}
